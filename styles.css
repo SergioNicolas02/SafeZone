@@ -1,24 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krub:wght@400;700&display=swap');
 
-header {
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.header {
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
     background: linear-gradient(
         90deg,
-         rgb(47, 203, 241) 0%,
-         rgb(65, 166, 233) 51%,
-         rgb(24, 27, 197) 100%);
-    padding: 40px;
+        rgb(24, 27, 197) 0%,
+        rgb(65, 166, 233) 51%,
+        rgb(47, 203, 241) 100%);
     color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header img {
+    width: 70px;
+    padding: .5rem;
+    border-radius: 50%;
+}
+.textosafe{
+    padding-right: 1.5rem;
+    padding-left: .5rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.primer-div, .segundo-div, .tercer-div{
+    width: 100vw;
+    height: calc(100vh - 70px - 1rem);
+}
+
+.primer-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.degradado{
+    background: linear-gradient(
+        90deg,
+        rgb(24, 27, 197) 0%,
+        rgb(65, 166, 233) 51%,
+        rgb(47, 203, 241) 100%);
+    letter-spacing: 3rem;
+    font-size: 10rem;
+    font-weight: bolder;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+.segundo-div{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-header img {
-    max-width: 250px;
-    margin-left: auto; 
-    margin-right: 20px;
-    
-     }
+.segundo-div p{
+    width: 80%;
+    font-size: 1.8rem;
+}
+.segundo-div ul{
+    padding: 0;
+    width: 80%;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+.segundo-div ul li strong{
+    color: rgb(24, 27, 197);
+}
+.tercer-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.tercer-div img{
+    width: 15%;
+    border-radius: 50%;
+}
+.tercer-div p{
+    width: 80%;
+    font-size: large;
+}
+.tercer-div .degradado-pequeno{
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    font-weight: bolder;
+    background: linear-gradient(
+        90deg,
+        rgb(24, 27, 197) 0%,
+        rgb(65, 166, 233) 51%,
+        rgb(47, 203, 241) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/*
 body {
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -51,3 +142,4 @@ p, li {
     color: transparent; 
 }
 
+*/
